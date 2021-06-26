@@ -1,12 +1,13 @@
 ﻿<Window x:Class="WpfApp1.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
         xmlns:local="clr-namespace:WpfApp1"
-        Title="MainWindow" SizeToContent="WidthAndHeight" Background="#222">
-  <Grid Height="450" Width="450" >
+        Title="MainWindow" SizeToContent="WidthAndHeight" Background="#2222"
+        AllowsTransparency="True" WindowStyle="None" ResizeMode="CanResizeWithGrip">
+  <Border Height="450" Width="450" BorderBrush="#777" CornerRadius="18 18 5 18" BorderThickness="2" >
     <Grid Margin="50" >
       <Ellipse Fill="#000" />
       <Ellipse Height="150" Width="150" Stroke="#f00" Fill="#6f00" Margin="100,42,100,158" />
       <Ellipse Height="150" Width="150" Stroke="#0f0" Fill="#50f0" Margin="50,130,150,70"  />
       <Ellipse Height="150" Width="150" Stroke="#00f" Fill="#400f" Margin="150,130,50,70"  />
     </Grid>
-  </Grid>
+  </Border>
 </Window>

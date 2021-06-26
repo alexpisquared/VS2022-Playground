@@ -15,14 +15,13 @@ using System.Windows.Shapes;
 
 namespace WpfApp1
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+            MouseLeftButtonDown += (s, e) => DragMove();
+            KeyUp += (s, e) => { switch (e.Key) { case Key.Escape: Close(); break; default: break; } };
         }
     }
 }
